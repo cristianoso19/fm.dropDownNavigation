@@ -21,20 +21,20 @@
       <div class="">
         <img class="w-18" src="../images/logo.svg" alt="logo snap">
       </div>
-      <div>
-        <img class="w-fit" src="../images/icon-menu.svg" alt="menu-image">
+      <div class="md:hidden z-10">
+        <img id="menu-icon" class="w-fit" src="../images/icon-menu.svg" alt="menu-image">
       </div>
       </div>
-      <div class="hidden">
-        <ul>
+      <div id="menu" class="hidden w-2/3 text-mediumGray bg-[#ffffff] fixed top-0 right-0 z-3">
+        <ul class="container mt-16 ml-6 text-l flex flex-col h-1/4 justify-around ">
           <li>Features</li>
           <li>Company</li>
           <li>Careers</li>
           <li>About</li>
         </ul>
-        <ul>
-          <li>Login</li>
-          <li>Register</li>
+        <ul class="container flex flex-col h-1/5 items-center justify-evenly px-3">
+          <li class="">Login</li>
+          <li class="w-full h-12 border-2 rounded-2xl border-mediumGray text-center pt-2">Register</li>
         </ul>
       </div>
     </nav>
@@ -66,5 +66,23 @@
       Coded by <a href="https://github.com/cristianoso19">🚀 cristianoso19</a>.
     </div>
   </footer>
+  <script>
+    let menu = document.getElementById('menu');
+    let menuicon = document.getElementById('menu-icon')
+    menuicon.addEventListener('click', function () {
+      menu.classList.toggle('hidden');
+      menu.classList.toggle('w-full');
+      menu.classList.toggle('h-screen');
+      toggleIcon();
+    }) 
+    function toggleIcon(){
+      let iconClass = menuicon.src;
+        if (iconClass.includes('icon-menu.svg')){
+          menuicon.src = '../images/icon-close-menu.svg';
+        } else {
+          menuicon.src = '../images/icon-menu.svg';
+      }
+    }
+  </script>
 </body>
 </html>
