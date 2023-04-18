@@ -25,17 +25,19 @@
         <img id="menu-icon" class="w-fit" src="../images/icon-menu.svg" alt="menu-image">
       </div>
       </div>
-      <div id="menu" class="hidden w-2/3 text-mediumGray bg-[#ffffff] fixed top-0 right-0 z-3">
-        <ul class="container mt-16 ml-6 text-l flex flex-col h-1/4 justify-around ">
-          <li>Features</li>
-          <li>Company</li>
-          <li>Careers</li>
-          <li>About</li>
-        </ul>
-        <ul class="container flex flex-col h-1/5 items-center justify-evenly px-3">
-          <li class="">Login</li>
-          <li class="w-full h-12 border-2 rounded-2xl border-mediumGray text-center pt-2">Register</li>
-        </ul>
+      <div id="menu" class="hidden bg-[rgba(0,0,0,0.5)] text-mediumGray fixed top-0 right-0 z-3">
+        <div id="menu-container" class="bg-[rgba(255,255,255,1)] w-2/3 fixed top-0 right-0  z-4">
+          <ul class=" mt-16 ml-6 text-l flex flex-col h-1/4 justify-around ">
+            <li>Features</li>
+            <li>Company</li>
+            <li>Careers</li>
+            <li>About</li>
+          </ul>
+          <ul class="container flex flex-col h-1/5 items-center justify-evenly px-3">
+            <li class="">Login</li>
+            <li class="w-full h-12 border-2 rounded-2xl border-mediumGray text-center pt-2">Register</li>
+          </ul>
+        </div>
       </div>
     </nav>
   </header>
@@ -68,11 +70,13 @@
   </footer>
   <script>
     let menu = document.getElementById('menu');
+    let menuContainer = document.getElementById('menu-container');
     let menuicon = document.getElementById('menu-icon')
     menuicon.addEventListener('click', function () {
       menu.classList.toggle('hidden');
       menu.classList.toggle('w-full');
       menu.classList.toggle('h-screen');
+      menuContainer.classList.toggle('h-screen');
       toggleIcon();
     }) 
     function toggleIcon(){
