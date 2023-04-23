@@ -28,9 +28,9 @@
       <div id="menu" class="hidden bg-[rgba(0,0,0,0.5)] text-mediumGray fixed top-0 right-0 z-3">
         <div id="menu-container" class="bg-[rgba(255,255,255,1)] w-2/3 fixed top-0 right-0 z-4">
           <ul class="mt-20 ml-6 text-l flex flex-col h-auto space-y-4">
-            <li class="cursor-pointer">Features
-              <img src="../images/icon-arrow-down.svg" class="inline ml-2" alt="">
-              <div>
+            <li id="features-dropdown" class="cursor-pointer">Features
+              <img id="features-dropdown-icon" src="../images/icon-arrow-down.svg" class="inline ml-2" alt="">
+              <div id="features-dropdown-container" class="hidden">
                   <ul class="space-y-3 text-left mt-3 ml-6">
                     <li class="cursor-pointer flex h-auto items-center space-x-3">
                       <img src="../images/icon-todo.svg" class="flex-shrink-0 w-1/12" alt=""> 
@@ -95,15 +95,29 @@
   <script>
     let menu = document.getElementById('menu');
     let menuContainer = document.getElementById('menu-container');
-    let menuicon = document.getElementById('menu-icon')
+    let menuicon = document.getElementById('menu-icon');
     menuicon.addEventListener('click', function () {
       menu.classList.toggle('hidden');
       menu.classList.toggle('w-full');
       menu.classList.toggle('h-screen');
       menuContainer.classList.toggle('h-screen');
-      toggleIcon();
-    }) 
-    function toggleIcon(){
+      toggleMenuIcon();
+    });
+    let featuresDropdown = document.getElementById('features-dropdown');
+    let featuresDropdownContainer = document.getElementById('features-dropdown-container');
+    featuresDropdown.addEventListener('click', function (){
+      featuresDropdownContainer.classList.toggle('hidden');
+      toggleArrowIcon(document.getElementById('features-dropdown-icon'));
+    });
+    function toggleArrowIcon(icon){
+      let iconSource = icon.src;
+      if (iconSource.includes('icon-arrow-down.svg')){
+        icon.src = '../images/icon-arrow-up.svg';
+      } else {
+        icon.src = '../images/icon-arrow-down.svg';
+      }
+    }
+    function toggleMenuIcon(){
       let iconClass = menuicon.src;
         if (iconClass.includes('icon-menu.svg')){
           menuicon.src = '../images/icon-close-menu.svg';
