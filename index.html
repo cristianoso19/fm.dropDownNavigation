@@ -51,8 +51,22 @@
                   </ul>
               </div>
             </li>
-            <li class="cursor-pointer">Company
-              <img src="../images/icon-arrow-down.svg" class="inline ml-2" alt="">
+            <li id="company-dropdown" class="cursor-pointer">Company
+              <img id="company-dropdown-icon" src="../images/icon-arrow-down.svg" class="inline ml-2" alt="">
+              <div id="company-dropdown-container" class="hidden">
+                  <ul class="space-y-3 text-left mt-3 ml-6">
+                    <li class="cursor-pointer flex h-auto items-center space-x-3">
+                      <span class="pt-1 ">History</span>
+                    </li>
+                    <li class="cursor-pointer flex h-auto items-center space-x-3">
+                      <span class="pt-1">Our Team</span>
+                    </li>
+                    <li class="cursor-pointer flex h-auto items-center space-x-3">
+                      <span class="pt-1">Blog</span>
+                    </li>
+                  </ul>
+              </div>
+
             </li>
             <li class="cursor-pointer">Careers</li>
             <li class="cursor-pointer">About</li>
@@ -109,6 +123,13 @@
       featuresDropdownContainer.classList.toggle('hidden');
       toggleArrowIcon(document.getElementById('features-dropdown-icon'));
     });
+    let companyDropdown = document.getElementById('company-dropdown');
+    let companyDropdownContainer = document.getElementById('company-dropdown-container');
+    companyDropdown.addEventListener('click', function (){
+      companyDropdownContainer.classList.toggle('hidden');
+      toggleArrowIcon(document.getElementById('company-dropdown-icon'));
+    });
+
     function toggleArrowIcon(icon){
       let iconSource = icon.src;
       if (iconSource.includes('icon-arrow-down.svg')){
