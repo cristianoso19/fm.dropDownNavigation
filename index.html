@@ -17,17 +17,16 @@
 </head>
 <body>
   <header class="m-6">
-    <nav class="flex justify-between">
+    <nav class="flex justify-between w-full">
       <div class="">
-        <img class="w-18" src="../images/logo.svg" alt="logo snap">
+        <img class="w-18 lg:w-24" src="../images/logo.svg" alt="logo snap">
       </div>
-      <div class="md:hidden z-10">
+      <div class="md:hidden lg:hidden z-10">
         <img id="menu-icon" class="w-fit" src="../images/icon-menu.svg" alt="menu-image">
       </div>
-      </div>
-      <div id="menu" class="hidden bg-[rgba(0,0,0,0.5)] text-mediumGray fixed top-0 right-0 z-3">
-        <div id="menu-container" class="bg-[rgba(255,255,255,1)] w-2/3 fixed top-0 right-0 z-4">
-          <ul class="mt-20 ml-6 text-l flex flex-col h-auto space-y-4">
+      <div id="menu" class="hidden lg:inline bg-[rgba(0,0,0,0.5)] lg:w-full text-mediumGray fixed top-0 right-0 z-3 lg:absolute">
+        <div id="menu-container" class="bg-[rgba(255,255,255,1)] w-2/3 lg:w-full lg:absolute fixed top-0 right-0 z-4 text-l lg:text-xl">
+          <ul class="lg:mt-0 mt-20 ml-6 flex flex-col lg:flex-row h-auto space-y-4 lg:space-y-0 lg:space-x-4">
             <li id="features-dropdown" class="cursor-pointer">Features
               <img id="features-dropdown-icon" src="../images/icon-arrow-down.svg" class="inline ml-2" alt="">
               <div id="features-dropdown-container" class="hidden">
@@ -71,9 +70,9 @@
             <li class="cursor-pointer">Careers</li>
             <li class="cursor-pointer">About</li>
           </ul>
-          <ul class="container flex flex-col h-1/5 items-center justify-evenly px-3">
+          <ul class="flex flex-col lg:flex-row h-1/5 items-center justify-evenly px-3 lg:px-0">
             <li  class="cursor-pointer">Login</li>
-            <li class="cursor-pointer w-full h-12 border-2 rounded-2xl border-mediumGray text-center pt-2">Register</li>
+            <li class="cursor-pointer w-full lg:w-32 h-12 border-2 rounded-2xl border-mediumGray text-center pt-2">Register</li>
           </ul>
         </div>
       </div>

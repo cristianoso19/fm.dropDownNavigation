@@ -473,34 +473,22 @@ video {
 .container {
   width: 100%;
 }
-@media (min-width: 640px) {
+@media (min-width: 576px) {
 
   .container {
-    max-width: 640px;
+    max-width: 576px;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 960px) {
 
   .container {
-    max-width: 768px;
+    max-width: 960px;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1440px) {
 
   .container {
-    max-width: 1024px;
-  }
-}
-@media (min-width: 1280px) {
-
-  .container {
-    max-width: 1280px;
-  }
-}
-@media (min-width: 1536px) {
-
-  .container {
-    max-width: 1536px;
+    max-width: 1440px;
   }
 }
 .fixed {
@@ -704,7 +692,17 @@ video {
   --tw-text-opacity: 1;
   color: hsl(0 0% 41% / var(--tw-text-opacity));
 }
-@media (min-width: 768px) {
+@media (min-width: 576px) {
+
+  .sm\:bg-\[rgba\(255\2c 255\2c 255\2c 1\)\] {
+    background-color: rgba(255,255,255,1);
+  }
+
+  .sm\:bg-\[rgba\(0\2c 0\2c 0\2c 0\.5\)\] {
+    background-color: rgba(0,0,0,0.5);
+  }
+}
+@media (min-width: 960px) {
 
   .md\:block {
     display: block;
@@ -712,5 +710,99 @@ video {
 
   .md\:hidden {
     display: none;
+  }
+
+  .md\:bg-\[rgba\(255\2c 255\2c 255\2c 1\)\] {
+    background-color: rgba(255,255,255,1);
+  }
+}
+@media (min-width: 1440px) {
+
+  .lg\:static {
+    position: static;
+  }
+
+  .lg\:absolute {
+    position: absolute;
+  }
+
+  .lg\:sticky {
+    position: sticky;
+  }
+
+  .lg\:mt-0 {
+    margin-top: 0px;
+  }
+
+  .lg\:block {
+    display: block;
+  }
+
+  .lg\:inline-block {
+    display: inline-block;
+  }
+
+  .lg\:inline {
+    display: inline;
+  }
+
+  .lg\:flex {
+    display: flex;
+  }
+
+  .lg\:hidden {
+    display: none;
+  }
+
+  .lg\:w-36 {
+    width: 9rem;
+  }
+
+  .lg\:w-24 {
+    width: 6rem;
+  }
+
+  .lg\:w-32 {
+    width: 8rem;
+  }
+
+  .lg\:w-full {
+    width: 100%;
+  }
+
+  .lg\:w-fit {
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+
+  .lg\:flex-row {
+    flex-direction: row;
+  }
+
+  .lg\:space-x-4 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(1rem * var(--tw-space-x-reverse));
+    margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .lg\:space-y-0 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(0px * var(--tw-space-y-reverse));
+  }
+
+  .lg\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .lg\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .lg\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 }
