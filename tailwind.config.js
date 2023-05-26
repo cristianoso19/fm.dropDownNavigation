@@ -22,6 +22,7 @@ module.exports = {
       },
    },
     colors: {
+      'transparant': 'hsl(0, 0%, 100%)',
       'almostWhite': 'hsl(0, 0%, 91%)',
       'mediumGray': 'hsl(0, 0%, 41%)',
       'AlmostBlack': 'hsl(0, 0%, 8%)',

@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
@@ -12,21 +11,19 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
 </head>
 <body>
   <header class="m-6">
-    <nav class="flex justify-between w-full">
+    <nav class="flex justify-between w-full lg:mt-10 lg:mx-6">
       <div class="">
-        <img class="w-18 lg:w-24" src="../images/logo.svg" alt="logo snap">
+        <img class="w-18 lg:w-28" src="../images/logo.svg" alt="logo snap">
       </div>
       <div class="md:hidden lg:hidden z-10">
         <img id="menu-icon" class="w-fit" src="../images/icon-menu.svg" alt="menu-image">
       </div>
-      <div id="menu" class="hidden lg:inline bg-[rgba(0,0,0,0.5)] lg:w-full text-mediumGray fixed top-0 right-0 z-3 lg:absolute">
-        <div id="menu-container" class="bg-[rgba(255,255,255,1)] w-2/3 lg:w-full lg:absolute fixed top-0 right-0 z-4 text-l lg:text-xl">
-          <ul class="lg:mt-0 mt-20 ml-6 flex flex-col lg:flex-row h-auto space-y-4 lg:space-y-0 lg:space-x-4">
+      <div id="menu" class="hidden bg-[rgba(0,0,0,0.5)] lg:bg-transparant text-mediumGray fixed top-0 right-0 z-3 lg:static lg:inline lg:w-full">
+        <div id="menu-container" class="bg-[rgba(255,255,255,1)] w-2/3 fixed top-0 right-0 z-4 text-l lg:w-full lg:text-l lg:font-bold lg:static lg:flex lg:justify-between">
+          <ul class="lg:mt-0 mt-20 ml-6 flex flex-col lg:flex-row lg:ml-16 h-auto space-y-4 lg:space-y-0 lg:space-x-9">
             <li id="features-dropdown" class="cursor-pointer">Features
               <img id="features-dropdown-icon" src="../images/icon-arrow-down.svg" class="inline ml-2" alt="">
               <div id="features-dropdown-container" class="hidden">
@@ -70,7 +67,7 @@
             <li class="cursor-pointer">Careers</li>
             <li class="cursor-pointer">About</li>
           </ul>
-          <ul class="flex flex-col lg:flex-row h-1/5 items-center justify-evenly px-3 lg:px-0">
+          <ul class="flex flex-col h-1/5 items-center justify-evenly px-3 lg:w-1/4 lg:flex-row">
             <li  class="cursor-pointer">Login</li>
             <li class="cursor-pointer w-full lg:w-32 h-12 border-2 rounded-2xl border-mediumGray text-center pt-2">Register</li>
           </ul>
