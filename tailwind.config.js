@@ -2,6 +2,18 @@
 module.exports = {
   content: ['./index.html'],
   theme: {
+    fontSize: {
+      xs: '0.75rem',
+      sm: '0.875rem',
+      md: '1rem',
+      lg: '1.15rem',
+      xl: '1.25rem',
+      '2xl': '1.563rem',
+      '3xl': '1.953rem',
+      '4xl': '2.441rem',
+      '5xl': '3.052rem',
+      '8xl': '5.6rem',
+    },
     screens: {
       'sm': '576px',
       // => @media (min-width: 576px) { ... }
