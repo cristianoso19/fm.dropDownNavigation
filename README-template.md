@@ -16,8 +16,6 @@ This is a solution to the [Intro section with dropdown navigation challenge on F
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### The challenge
@@ -54,35 +52,12 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
 
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
+In this project, I focused on implementing responsive design techniques using Tailwind CSS, a utility-first CSS framework. I aimed to create a visually appealing and user-friendly interface that adapts seamlessly to different screen sizes and devices. By leveraging Tailwind CSS's flexible and customizable components, I ensured that the design remains consistent across various platforms.
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+Additionally, I incorporated JavaScript to enhance the user experience by implementing dynamic menus and dropdowns. Through JavaScript, I created interactive elements that allow users to navigate through the application with ease. This included creating responsive menus that adapt to different screen sizes, implementing dropdown functionality, and ensuring smooth transitions and animations.
 
 ### Continued development
 
